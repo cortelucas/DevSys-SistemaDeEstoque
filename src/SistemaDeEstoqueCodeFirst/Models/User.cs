@@ -29,5 +29,6 @@ namespace SistemaDeEstoqueCodeFirst.Models
         public string RecoveryCode { get; set; }
         public bool Active { get; set; }
         public int RoleID { get; set; }
+        public Role Role { get; set; }
   }
 }

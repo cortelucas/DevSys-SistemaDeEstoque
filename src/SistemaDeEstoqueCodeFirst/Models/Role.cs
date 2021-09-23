@@ -4,14 +4,14 @@ namespace SistemaDeEstoqueCodeFirst.Models
 {
   public class Role
   {
-    public Role(int iD, string nome)
+    public Role(int iD, string name)
     {
       ID = iD;
-      Nome = nome;
+      Name = name;
 
     }
     public int ID { get; set; }
-    public string Nome { get; set; }
+    public string Name { get; set; }
     public ICollection<User> Users { get; set; }
 
   }

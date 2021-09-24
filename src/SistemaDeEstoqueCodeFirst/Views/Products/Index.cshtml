@@ -1,14 +1,13 @@
 ﻿@model IEnumerable<SistemaDeEstoqueCodeFirst.Models.Product>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Products";
 }
 
-<h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+<div class="row d-flex justify-content-around align-items-center">
+    <div class="col-6"><h1>Produtos</h1></div>
+    <div class="col-6"><a asp-action="Create"><i class="far fa-plus-square"></i></a></div>
+</div>
 <table class="table">
     <thead>
         <tr>
@@ -32,12 +31,6 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.LastUpdate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Status)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.UserID)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Category)
@@ -68,12 +61,6 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.LastUpdate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Status)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.UserID)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Category.Name)

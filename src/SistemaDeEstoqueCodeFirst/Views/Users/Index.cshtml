@@ -4,11 +4,10 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+<div class="row d-flex justify-content-around align-items-center">
+    <div class="col-6"><h1>Usuários</h1></div>
+    <div class="col-6"><a asp-action="Create"><i class="far fa-user-plus"></i></a></div>
+</div>
 <table class="table">
     <thead>
         <tr>
@@ -19,16 +18,10 @@
                 @Html.DisplayNameFor(model => model.Email)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Password)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.DateCreated)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.LastUpdate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.RecoveryCode)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Active)

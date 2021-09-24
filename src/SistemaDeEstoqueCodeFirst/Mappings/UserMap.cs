@@ -32,7 +32,7 @@ namespace SistemaDeEstoqueCodeFirst.Mappings
             .HasColumnType("varchar(200)");
         
         builder.Property(p => p.Active)
-            .HasColumnType("boolean");
+            .HasColumnType("bit");
         
         builder.HasOne(p => p.Role)
             .WithMany(p => p.Users)
